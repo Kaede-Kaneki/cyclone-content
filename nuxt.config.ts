@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   // nitro: {
   //   preset: 'service-worker'
   // },
-  // modules: [
-  //   '@nuxt/content'
-  // ],
+  modules: [
+    '@nuxt/content'
+  ]
 })
