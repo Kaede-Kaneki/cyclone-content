@@ -13,7 +13,9 @@ export default defineNuxtConfig({
   },
   srcDir: 'src',
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss'
   ],
   app: {
     baseURL: '/',
@@ -24,8 +26,25 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#4fc08d' },
         { name: 'format-detection', content: 'telephone=no' }
       ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
       charset: 'utf-8',
       htmlAttrs: { lang: 'zh' }
     }
+  },
+  components: {
+    dirs: [
+      'src/components/widgets'
+    ]
+  },
+  colorMode: {
+    preference: 'light',
+    classSuffix: ''
+  },
+  tailwindcss: {
+    viewer: false,
+    cssPath: 'src/assets/scss/tailwind.scss',
+    configPath: 'src/config/tailwind.config.ts'
   }
 })

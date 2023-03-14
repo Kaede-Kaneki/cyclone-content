@@ -1,0 +1,79 @@
+@import "iconfont.css";
+@import "default";
+@import "markdown";
+@import "scrollbar";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  //html {
+  //  font-size: 12px;
+  //  word-break: break-word;
+  //  text-rendering: optimizeLegibility;
+  //  color: #333;
+  //  background-color: var(--cl-bg-base-hover-color);
+  //}
+  //
+  //body,html {
+  //  -webkit-font-smoothing: unset!important;
+  //  font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial!important
+  //}
+  //
+  //body {
+  //  word-break: break-word;
+  //  overflow-y: scroll
+  //}
+
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply antialiased text-black dark:text-white font-sans bg-white dark:bg-black;
+  }
+
+  :root{
+    /*主题色*/
+    --cl-primary-color: 16, 158, 255;
+    /*成功*/
+    --cl-success-color: 103, 194, 58;
+    /*失败*/
+    --cl-warning-color: 230, 162, 60;
+    /*危险*/
+    --cl-danger-color: 245, 108, 108;
+  }
+
+  .light{
+    color-scheme: light;
+
+    --cl-bg-base-color: 255, 255, 255;
+    --cl-bg-base-hover-color: 243, 244, 246;
+    --cl-bg-base-muted-color: 255, 255, 255;
+
+    --cl-text-base-color: 107, 114, 128;
+    --cl-text-base-hover-color: 55, 65, 81;
+
+    --cl-border-base-color: 209, 213, 219;
+    --cl-border-base-muted-color: 234, 234, 234;
+  }
+
+  .dark{
+    color-scheme: dark;
+
+    --cl-bg-base-color: 32, 41, 49;
+    --cl-bg-base-hover-color: 17, 24, 39;
+    --cl-bg-base-muted-color: 29, 36, 42;
+
+    --cl-text-base-color: 156, 163, 175;
+    --cl-text-base-hover-color: 209, 213, 219;
+
+    --cl-border-base-color: 107, 114, 128;
+    --cl-border-base-muted-color: 51, 51, 51;
+  }
+
+  .active {
+    color: #4fc08d;
+  }
+}

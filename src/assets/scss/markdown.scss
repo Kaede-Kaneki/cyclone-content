@@ -1,0 +1,18 @@
+.markdown-body pre > code:before {
+  content: attr(lang);
+  position: absolute;
+  right: 70px;
+  top: 2px;
+  color: hsla(0,0%,54.9%,.8);
+}
+
+.markdown-body pre > code > .copy-code-btn {
+  position: absolute;
+  top: 2px;
+  right: 14px;
+  color: hsla(0,0%,54.9%,.8);
+  cursor: pointer;
+  &:hover {
+    color: #8c8c8c;
+  }
+}
