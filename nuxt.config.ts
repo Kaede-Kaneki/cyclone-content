@@ -4,6 +4,9 @@ const resolve = (dir: string) => path.join(__dirname, dir)
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
+  nitro: {
+    preset: 'vercel'
+  },
   alias: {
     src: resolve('src'),
     '@': resolve('src')
@@ -13,7 +16,7 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   app: {
-    baseURL: '/cyclone-content/',
+    baseURL: '/',
     head: {
       title: 'Cyclone',
       meta: [
