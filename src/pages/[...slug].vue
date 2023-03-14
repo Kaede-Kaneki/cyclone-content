@@ -19,11 +19,11 @@
 </template>
 
 <script setup lang="ts">
-const modules = import.meta.glob('src/content/*.md')
 const articleList = []
-Object.keys(modules).forEach((v) => {
-  articleList.push(v.split('/content/')[1].split('.')[0])
-})
+const modules = import.meta.glob('src/content/*.md', { as: 'raw' })
+for (const path in modules) {
+  articleList.push(path.split('/content/')[1].split('.')[0])
+}
 </script>
 
 <style scoped lang="scss">

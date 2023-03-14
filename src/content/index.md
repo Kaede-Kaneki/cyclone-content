@@ -1,3 +1,5 @@
 # 测试
 
-[TEST](/test)
+[TEST](http://www.baidu.com)
+
+[MD](/test)
