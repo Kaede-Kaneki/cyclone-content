@@ -1,6 +1,13 @@
 <template>
   <main>
-    <ContentDoc />
+    <ContentDoc>
+      <template #empty>
+        <div>empty</div>
+      </template>
+      <template #not-found>
+        <div>not found</div>
+      </template>
+    </ContentDoc>
   </main>
 </template>
 
