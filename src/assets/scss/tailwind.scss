@@ -8,23 +8,6 @@
 @tailwind utilities;
 
 @layer base {
-  //html {
-  //  font-size: 12px;
-  //  word-break: break-word;
-  //  text-rendering: optimizeLegibility;
-  //  color: #333;
-  //  background-color: var(--cl-bg-base-hover-color);
-  //}
-  //
-  //body,html {
-  //  -webkit-font-smoothing: unset!important;
-  //  font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial!important
-  //}
-  //
-  //body {
-  //  word-break: break-word;
-  //  overflow-y: scroll
-  //}
 
   html {
     @apply scroll-smooth
