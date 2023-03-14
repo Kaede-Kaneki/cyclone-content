@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   app: {
+    baseURL: '/cyclone-content/',
     head: {
       title: 'Cyclone',
       meta: [
