@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   content: {},
   app: {
-    baseURL: '/cyclone-content',
+    baseURL: '/cyclone-content/',
     head: {
       title: 'Cyclone',
       meta: [
